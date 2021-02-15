@@ -94,15 +94,19 @@ public class App {
 				user.textButton();
 				break;
 			case 4:
-
-				break;
+				user.internetButton();
+                break;
 			case 5:
-				user.powerOff();
+				user.mobileBuy();
 				break;
+			case 6:
+				return;
+			case 7:
+				System.out.println("컴퓨터 종료");
+				return;
 			case 9:
-
 				System.out.println("핸드폰을 종료합니다.");
-				return; 
+				break; 
 			default : 
 				System.out.println("잘못된 번호를 선택하셨습니다.");
 				break;

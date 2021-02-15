@@ -2,6 +2,7 @@ package problem4;
 
 public class User {
 	private Cellphone cellPhone = new Cellphone();
+	private SmartPhone smartPhone = new SmartPhone();
 	
 	public void powerOn() {
 	
@@ -24,4 +25,12 @@ public class User {
 		
 	}
 
+	public void internetButton() {
+			smartPhone.internet();
+	}
+
+	public void mobileBuy() {
+			smartPhone.mobileBuy();
+	}
+	
 }
