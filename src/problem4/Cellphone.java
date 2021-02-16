@@ -2,12 +2,59 @@ package problem4;
 
 public class Cellphone {
 	
-	private boolean isOn;
-	private boolean call;
-	private boolean text;
+	public boolean isCall() {
+		return call;
+	}
+
+	public void setCall(boolean call) {
+		this.call = call;
+	}
+
+	public boolean isText() {
+		return text;
+	}
+
+	public void setText(boolean text) {
+		this.text = text;
+	}
+
+	public CallFunc getCallFunc() {
+		return callFunc;
+	}
+
+	public void setCallFunc(CallFunc callFunc) {
+		this.callFunc = callFunc;
+	}
+
+	public TextFunc getTextFunc() {
+		return textFunc;
+	}
+
+	public void setTextFunc(TextFunc textFunc) {
+		this.textFunc = textFunc;
+	}
+
+	public void setOn(boolean isOn) {
+		this.isOn = isOn;
+	}
+
+
+	protected boolean isOn;
+	protected boolean call;
+	protected boolean text;
 	CallFunc callFunc = new CallFunc();
 	TextFunc textFunc = new TextFunc();
 	
+	protected boolean isOn() {
+		return this.isOn;
+	}
+	
+	protected boolean call() {
+		return this.call;
+	}
+	protected boolean text() {
+		return this.text;
+	}
 	
 	public void powerOn() {
 
@@ -44,10 +91,10 @@ public class Cellphone {
 		if(this.isOn) {
 
 			if(this.text) {
-				System.out.println("친구와 통화를 합니다.");
+				System.out.println("친구와 문자를 합니다.");
 			}else {
 				text = true;
-				System.out.println("통화버튼이 눌려졌습니다. 친구와 통화를 할 수 있습니다.");
+				System.out.println("문자버튼이 눌려졌습니다. 친구와 문자를 할 수 있습니다.");
 			}
 			
 		}else {

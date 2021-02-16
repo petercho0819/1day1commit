@@ -9,9 +9,26 @@ public class SmartPhone extends Cellphone{
 
 	}
 
-	boolean isOn;
-	boolean call;
-	boolean text;
+	private boolean internetOn;
+	private boolean mobileBuy;
+	
+	public boolean isInternetOn() {
+		return internetOn;
+	}
+	
+	public boolean isMobileBuy() {
+		return mobileBuy;
+	}
+	
+	public void setInternetOn(boolean internetOn) {
+		this.internetOn = internetOn;
+	}
+
+	
+	public void setMobileBuy(boolean mobileBuy) {
+		this.mobileBuy = mobileBuy;
+	}
+
 	@Override
 	public void powerOn() {
 
@@ -73,13 +90,37 @@ public class SmartPhone extends Cellphone{
 	}
 
 	public void internet() {
-		// TODO Auto-generated method stub
+		if(this.isOn) {
+
+			if(this.internetOn) {
+				System.out.println("인터넷이 연결되어 있습니다. 인터넷을 사용할 수 있습니다.");
+			}else {
+				internetOn = true;
+				System.out.println("인터넷이 연결되어 있지 않습니다. 인터넷을 연결합니다.");
+			}
+			
+		}else {
+			System.out.println("전원이 꺼져있습니다. 전원을 켜주세요.");
+
+		}
 		
 	}
 
 	public void mobileBuy() {
-		// TODO Auto-generated method stub
+		if(this.isOn) {
+
+			if(this.mobileBuy) {
+				System.out.println("모바일 거래가 가능합니다.");
+			}else {
+				mobileBuy = true;
+				System.out.println("모바일을 연결할 수 없어서 모바일을 연결합니다.");
+			}
+			
+		}else {
+			System.out.println("전원이 꺼져있습니다. 전원을 켜주세요.");
+
 		
+		}
 	}
 
 
