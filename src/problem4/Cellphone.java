@@ -18,32 +18,32 @@ public class Cellphone {
 		this.text = text;
 	}
 
-	public CallFunc getCallFunc() {
-		return callFunc;
-	}
-
-	public void setCallFunc(CallFunc callFunc) {
-		this.callFunc = callFunc;
-	}
-
-	public TextFunc getTextFunc() {
-		return textFunc;
-	}
-
-	public void setTextFunc(TextFunc textFunc) {
-		this.textFunc = textFunc;
-	}
+//	public CallFunc getCallFunc() {
+//		return callFunc;
+//	}
+//
+//	public void setCallFunc(CallFunc callFunc) {
+//		this.callFunc = callFunc;
+//	}
+//
+//	public TextFunc getTextFunc() {
+//		return textFunc;
+//	}
+//
+//	public void setTextFunc(TextFunc textFunc) {
+//		this.textFunc = textFunc;
+//	}
 
 	public void setOn(boolean isOn) {
 		this.isOn = isOn;
 	}
 
 
-	protected boolean isOn;
-	protected boolean call;
-	protected boolean text;
-	CallFunc callFunc = new CallFunc();
-	TextFunc textFunc = new TextFunc();
+	protected static boolean isOn;
+	protected static boolean call;
+	protected static boolean text;
+//	CallFunc callFunc = new CallFunc();
+//	TextFunc textFunc = new TextFunc();
 	
 	protected boolean isOn() {
 		return this.isOn;

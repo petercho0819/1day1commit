@@ -9,8 +9,8 @@ public class SmartPhone extends Cellphone{
 
 	}
 
-	private boolean internetOn;
-	private boolean mobileBuy;
+	private static boolean internetOn;
+	private static boolean mobileBuy;
 	
 	public boolean isInternetOn() {
 		return internetOn;

@@ -2,7 +2,9 @@ package problem4;
 
 public class User {
 	private Cellphone cellPhone = new Cellphone();
-	private SmartPhone smartPhone = new SmartPhone();
+	public SmartPhone smartPhone = new SmartPhone();
+	private boolean isCellPhone = false;
+	App app = new App();
 	
 	public void powerOn() {
 	
@@ -11,7 +13,12 @@ public class User {
 	}
 
 	public void Callbutton() {
-		cellPhone.callbutton();
+		if(isCellPhone) {
+			smartPhone.callbutton();
+		}else {
+			cellPhone.callbutton();
+		}
+		
 		
 	}
 
@@ -31,6 +38,7 @@ public class User {
 
 	public void mobileBuy() {
 			smartPhone.mobileBuy();
+			isCellPhone = true;
 	}
 	
 }

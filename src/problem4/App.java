@@ -19,7 +19,7 @@ public class App {
 		 */
 		User user = new User();	// 왜 여기다가 선언을 해야 하는가
 		Scanner sc = new Scanner(System.in);
-		SmartPhone phone = new SmartPhone();
+//		SmartPhone phone = new SmartPhone();
 
 		while(true) {
 
@@ -66,14 +66,14 @@ public class App {
 
 		User user = new User();	// 왜 여기다가 선언을 해야 하는가
 		Scanner sc = new Scanner(System.in);
-		SmartPhone smartPhone = new SmartPhone();
+//		Cellphone smartPhone = new SmartPhone();
 
 		while(true) {
 
 
 			System.out.println("나의 스마트 핸드폰 사용!!");
 			System.out.println("1. 전원 버튼(스마트폰)");
-			System.out.println("2. 전화 버튼(스마트1폰)");
+			System.out.println("2. 전화 버튼(스마트폰)");
 			System.out.println("3. 문자 버튼(스마트폰)");
 			System.out.println("4. 인터넷 사용(스마트폰)");
 			System.out.println("5. 모바일 거래(스마트폰)");
@@ -84,16 +84,16 @@ public class App {
 
 			switch(no2) {
 			case 1: 
-				smartPhone.powerOn();
+				user.powerOn();
 				break;
 			case 2:
-				smartPhone.callbutton();
+				user.Callbutton();
 				break;
 			case 3:
-				smartPhone.textButton();
+				user.textButton();
 				break;
 			case 4:
-				smartPhone.internet();
+				user.internetButton();
 				break;
 			case 5:
 				user.mobileBuy();
