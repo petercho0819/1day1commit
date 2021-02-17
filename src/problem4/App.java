@@ -20,8 +20,8 @@ public class App {
 		User user = new User();	// 왜 여기다가 선언을 해야 하는가
 		Scanner sc = new Scanner(System.in);
 //		SmartPhone phone = new SmartPhone();
-
 		while(true) {
+			user.isCellPhone = false;
 
 			System.out.println("나의 핸드폰 사용!!");
 			System.out.println("1. 전원 버튼 ");
@@ -70,6 +70,7 @@ public class App {
 
 		while(true) {
 
+			user.isCellPhone = true;
 
 			System.out.println("나의 스마트 핸드폰 사용!!");
 			System.out.println("1. 전원 버튼(스마트폰)");
