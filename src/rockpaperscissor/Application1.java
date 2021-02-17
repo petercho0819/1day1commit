@@ -20,16 +20,24 @@ public class Application1 {
 		
 		Scanner sc = new Scanner(System.in);
 		int coin = 0;	// 넣은 코인의 개수
+		String com = "";
+		String user = "";
 		
-		while(true) {
-			System.out.println("==== 컴퓨터와 가위바위보 게임 하기 (승률포함)======");
-			System.out.print("코인을 넣으세요~ (최대 10개) : ");
-			coin = sc.nextInt(); // 게임 개수 입력
-			
-			if(coin > 10) {
-				System.out.println("최대 게임의 수를 넘었습니다. 다시 입력하세요.");
-				return;
-			}
+		int win = 0;
+		int lose = 0;
+		int draw = 0;
+		int fail = 0;
+		
+		System.out.println("==== 컴퓨터와 가위바위보 게임 하기 (승률포함)======");
+		System.out.print("코인을 넣으세요~ (최대 10개) : ");
+		coin = sc.nextInt(); // 게임 개수 입력
+		
+		if(coin > 10) {
+			System.out.println("최대 게임의 수를 넘었습니다. 다시 입력하세요.");
+			return;
+		}
+		
+		for(int i = 0; i < coin; i++) {
 			
 			int userNum = 0;	// 유저가 선택한 수 초기화
 			System.out.println("가위(1번), 바위(2번), 보(3번) 중 선택하세요");
@@ -69,8 +77,10 @@ public class Application1 {
 			
 			
 			
-		}
+		} //while 문 종료
 		
+		System.out.println("게임 횟수는 : " + coin);
+		System.out.println("[전적] 이긴 횟수 : " + win + "번");
 		
 	}
 
