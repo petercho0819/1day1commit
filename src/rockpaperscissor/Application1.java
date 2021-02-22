@@ -69,8 +69,13 @@ public class Application1 {
 				System.out.println("시스템에 에러가 있습니다.");
 			}
 			if(userNum >= 1 && userNum <=3) {
-				if((comNum == 1 && userNum == 2) || (comNum ==))
-				
+				if((comNum == 1 && userNum == 2) || (comNum ==)) {
+					
+				}
+					
+				elseif(){
+					
+				}
 				
 				
 			}
