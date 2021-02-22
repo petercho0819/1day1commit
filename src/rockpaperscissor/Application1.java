@@ -69,12 +69,15 @@ public class Application1 {
 				System.out.println("시스템에 에러가 있습니다.");
 			}
 			if(userNum >= 1 && userNum <=3) {
-				if((comNum == 1 && userNum == 2) || (comNum ==)) {
-					
-				}
-					
-				elseif(){
-					
+				if((comNum == 1 && userNum == 2) || (comNum ==2 && userNum ==3) || (comNum == 3 && userNum ==1)) {
+					win++;
+					System.out.println("승리");
+				}else if(comNum == userNum){
+					draw++;
+					System.out.println("무승부");
+				}else {
+					lose++;
+					System.out.println("패배");
 				}
 				
 				
@@ -83,7 +86,7 @@ public class Application1 {
 			
 			
 			System.out.println("당신은 " + user + " vs " + "컴퓨터는 " +  com);
-			
+			System.out.println("이긴 횟수 : " + win + "진 횟수" + lose + "비긴 횟수 " + draw);
 			
 
 		}
