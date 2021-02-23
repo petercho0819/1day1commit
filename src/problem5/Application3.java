@@ -20,19 +20,20 @@ public class Application3 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("숫자를 입력하세요 ");
 		int num = sc.nextInt();
+		int num2  = num;
+		int sumNum = 0;
 		
-		for(int i = 0; i < num; i++) {
-			if(num % num == 0 ) {
-				
-				int num2 += num;
-				
-				
-			}else {
-				
-				System.out.println("완전수가 아니다");
+		for(int i = 1; i < num; i++) {
+			if(num2 % num == 0 ) {
+				sumNum += i;
 			}
 		}
 		
+		if(sumNum == num2) {
+			System.out.println("완전수 이다");	
+		}else {
+			System.out.println("완전수가 아니다");
+		}
 		
 	}
 	
