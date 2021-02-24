@@ -37,12 +37,5 @@ public class Application3 {
 		
 	}
 	
-	
-	
-	
-
-
-
-
 
 }

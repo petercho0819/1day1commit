@@ -18,21 +18,6 @@ public class Cellphone {
 		this.text = text;
 	}
 
-//	public CallFunc getCallFunc() {
-//		return callFunc;
-//	}
-//
-//	public void setCallFunc(CallFunc callFunc) {
-//		this.callFunc = callFunc;
-//	}
-//
-//	public TextFunc getTextFunc() {
-//		return textFunc;
-//	}
-//
-//	public void setTextFunc(TextFunc textFunc) {
-//		this.textFunc = textFunc;
-//	}
 
 	public void setOn(boolean isOn) {
 		this.isOn = isOn;
