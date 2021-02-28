@@ -1,5 +1,6 @@
 package problem5;
 
+import java.util.Collection;
 import java.util.HashSet;
 
 public class Application2 {
@@ -66,6 +67,12 @@ public class Application2 {
         }
         
         System.out.println(set);
+        
+//        Iterator<String> iter = set.iterator();
+       
+        
+//        System.out.println("오름차순 : " + iter);
+        
         
         
 	}
