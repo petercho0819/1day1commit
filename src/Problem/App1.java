@@ -24,8 +24,6 @@ public class App1 {
 			if(i % 3 == 0 || i % 5 == 0) {
 				sum += i;
 			}
-			
-			
 		}
 		
 		System.out.println("100 미만의 자연수 에서 3, 5의 배수의 총합 : " + sum);
